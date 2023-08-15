@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function sum() {
+     myobject={5:8,9:5,"hello":"welcome"};
+     document.write(myobject["hello"]);
+     document.write(myobject[5]);
+    }
+    var z=function () {
+     document.write("<h1> This function is anonymous</h1>");    
+    }
+    var q=()=> {
+        document.write("<h1> this is arrow function</h1>");
+    }
+    z();
+    sum();
+    q();
+
+
+    </script>
+</body>
+</html>

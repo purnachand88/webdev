@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum() { //ordinary function
+       
+            const num1 = parseInt(prompt("enter first number"));
+            const num2 =parseInt(prompt("enter second nymber"));
+            const sum = num1 + num2;
+            document.write("addition is:"+sum);
+        }
+    var z=function () {  //Anonymous function
+        document.write("<h1> This function is anonymous</h1>");    
+        }
+    var q=()=> {   //Arrow Function
+        document.write("<h1> this is arrow function</h1>");
+    }
+    class test {
+        constructor() {  //javascript class constructor
+            document.write("<h1>Hello</h>");
+        }
+        show(){   //show method
+            document.write("<h1> HELLO </h1>");
+        }
+    }
+    z();
+    sum();
+    q();
+    obj = new test();
+    obj.show();
+
+
+    </script>
+</body>
+</html>
