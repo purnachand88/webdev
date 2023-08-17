@@ -1,0 +1,46 @@
+<html>  
+<head>  
+<title> Verification of  Password </title>  
+</head>  
+<script>  
+function verifyPassword() {  
+  var pw = document.getElementById("pswd").value;
+  var cpw = document.getElementById("cpswd").value;
+  if(pw == "") {  
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  }    
+  if(pw.length < 4) {  
+     document.getElementById("message").innerHTML = "**Password length must be atleast 4 characters";  
+     return false;  
+  }   
+  if(pw.length > 10) {  
+     document.getElementById("message").innerHTML = "**Password length must not exceed 10 characters";  
+     return false;  
+  }
+if(pw != cpw){
+     document.getElementById("message").innetHTML = "**password donot match!";
+     return false;
+} 
+else {  
+     alert("Password is correct");  
+  }  
+}  
+</script>  
+  
+<body>  
+<center> 
+<h3> Verify valid password Example </h3>  
+<form onsubmit ="return verifyPassword()">    
+<td> Enter Password </td>  
+<input type = "password" id = "pswd" value = ""><br><br> 
+<span id = "message"></span><br><br>
+<td> confirm Password </td>  
+<input type = "password" id = "cpswd" value = ""><br><br>
+<span id = "message"></span><br><br>     
+<input type = "submit" value = "Submit"> 
+<button type = "reset" value = "Reset" >Reset</button>  
+</form>  
+</center>  
+</body>  
+</html>  
